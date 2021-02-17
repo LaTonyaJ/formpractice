@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="forms.css">
+    <title>Form</title>
+</head>
+<body>
+    <div class="container">
+        <h1 id="formhead"><b>Form Heading!</b></h1>
+        <form class="form">
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" name="name" id="name" class="form-item" placeholder=
+                "Enter your name">
+            </div>
+            <div class="form-group">
+                <label id="address-label" for="address">Address</label>
+                <input type="text" name="address" id="address" class="form-item" placeholder="Enter Address">
+            </div>
+            <div class="form-group">
+                <label id="city-label" for="City">City</label>
+                <input type="text" name="city" id="city" class="form-item" placeholder="Enter City"> 
+            </div>
+            <div class="form-group">
+                <label id="state-label" for="state">State</label>
+                <input type="text" name="state" id="state" class="form-item" placeholder="Enter State">
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-item" placeholder="Enter Email">
+            </div>
+            <div class="form-group" id="education">
+                <p>Highest Education</p>
+                <label>
+                    <input type="checkbox" name="education" class="input-checkbox" value="masters">Masters
+                </label>
+                <label>
+                    <input type="checkbox" name="education" class="input-checkbox" value="bachelors">Bachelors
+                </label>
+                <label>
+                    <input name="education" value="associates" class="input-checkbox" type="checkbox">Associates
+                </label> 
+                <label>
+                    <input class="input-checkbox" name="education" value="trade" type="checkbox">Trade School
+                </label>
+                <label>
+                    <input class="input-checkbox" name="education" value="highschool" type="checkbox">High School Diploma
+                </label>
+            </div>
+            <div class="form-group" id="interest">
+                <p>Select your interest</p>
+                <label> 
+                    <input class="input-radio" name="interest" value="Bio" type="radio">Biology
+                </label>
+                <label>
+                    <input class="input-radio" name="interest" value="Business" type="radio">Business
+                </label>
+                <label>
+                    <input class="input-radio" name="interest" value="Computer Science" type="radio">Computer Science
+                </label>
+                <label>
+                    <input type="radio" value="Mathematics" name="interest" class="input-radio">Mathematics
+                </label>
+                <label>
+                    <input type="radio" value="English" name="interest" class="input-radio">English
+                </label>
+            </div>
+            <div class="form-group">
+                <p>Select Gender</p>
+                <select id="dropdown" name="gender" class="">
+                    <option value disabled selected value>
+                    Select Gender
+                    </option>
+                    <option value="female">Female
+                    </option>
+                    <option value="male">Male
+                    </option>
+                    <option value="none">Prefer not to answer
+                    </option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>Explain your career interest</p>
+                <textarea id="essay" name="essay" placeholder="Enter text here..."></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit">SUBMIT
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
